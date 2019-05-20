@@ -3,12 +3,21 @@
 	<teams>
 		<team id="GDA">
 			<name>PKS Gdansk</name>
-			<rank>2509</rank>
+			<rank>2</rank>
 			<titles>3</titles>
 			<staff>
-				<first_coach> Jan Boklev </first_coach>
-				<analising_coach> Marian Pazdzioch </analising_coach>
-				<young_coach> Mariusz Rusznikiewicz </young_coach>
+				<first_coach> 
+					<firstname>Jan </firstname>
+					<lastname> Boklev </lastname>
+				</first_coach>
+				<analising_coach>
+					<firstname>Marian</firstname>
+					<lastname> Pazdzioch </lastname> 
+				</analising_coach>
+				<young_coach>
+					<firstname>Marcin</firstname>
+					<lastname>Rusznikiewicz</lastname>
+				</young_coach>
 			</staff>
 			<adress>
 				<street>Wolska 3 </street>
@@ -18,12 +27,21 @@
 		</team>
 		<team id="WWA">
 			<name>WKSZACH Warszawa</name>
-			<rank>2619</rank>
+			<rank>5</rank>
 			<titles>10</titles>
 			<staff>
-				<first_coach> Garrii Marinkov </first_coach>
-				<analising_coach> Stock Ryba </analising_coach>
-				<young_coach> Blazej Wiecławski </young_coach>
+				<first_coach> 
+					<firstname>Mirosław </firstname>
+					<lastname> Bojański </lastname>
+				</first_coach>
+				<analising_coach>
+					<firstname>Zbigniew</firstname>
+					<lastname> Kowalski </lastname> 
+				</analising_coach>
+				<young_coach>
+					<firstname>Zygmunt</firstname>
+					<lastname>Małek</lastname>
+				</young_coach>
 			</staff>
 			<adress>
 				<street>Aleja Zasłużonych 33 </street>
@@ -32,14 +50,23 @@
 			</adress>
 		</team>
 		
-		<team id="LKSZ">
+		<team id="LKS">
 			<name>Łódzki Klub Szachowy Pomarancza</name>
-			<rank>2311</rank>
+			<rank>11</rank>
 			<titles>0</titles>
 			<staff>
-				<first_coach> Jerzy Owsiak </first_coach>
-				<analising_coach> James Fischer </analising_coach>
-				<young_coach> Bartosz Mierzejewski </young_coach>
+				<first_coach> 
+					<firstname>Jan</firstname>
+					<lastname>Kowalski</lastname>
+				</first_coach>
+				<analising_coach>
+					<firstname>Piotr</firstname>
+					<lastname>Reiss</lastname> 
+				</analising_coach>
+				<young_coach>
+					<firstname>Bartosz</firstname>
+					<lastname>Literski</lastname>
+				</young_coach>
 			</staff>
 			<adress>
 				<street>Powstańców 33 </street>
@@ -50,13 +77,21 @@
 		
 		<team id="PZN">
 			<name>Poznanski Klub Szachowo-Brydżowy</name>
-			<rank>2699</rank>
+			<rank>1</rank>
 			<titles>5</titles>
 			<staff>
-				<first_coach> Maciej Domin </first_coach>
-				<analising_coach> Krzysztof Krawczyk </analising_coach>
-				<young_coach> Marcin Kostulak </young_coach>
-			</staff>
+				<first_coach> 
+					<firstname>Mikołaj</firstname>
+					<lastname> Drożdżyński</lastname>
+				</first_coach>
+				<analising_coach>
+					<firstname>Sebastian</firstname>
+					<lastname>Olszewski</lastname> 
+				</analising_coach>
+				<young_coach>
+					<firstname>Filip</firstname>
+					<lastname>Tuszkowski/lastname>
+				</young_coach>
 			<adress>
 				<street>Łazarska 39 </street>
 				<city>Poznan</city>
@@ -66,12 +101,21 @@
 		
 		<team id="WLN">
 			<name>Polskie Wilno - Klub Szachowy</name>
-			<rank>2592</rank>
+			<rank>3</rank>
 			<titles>7</titles>
 			<staff>
-				<first_coach> Roman Kasparov</first_coach>
-				<analising_coach> Dariusz Makeev </analising_coach>
-				<young_coach> Vitalij Zdorevitzki </young_coach>
+				<first_coach> 
+					<firstname>Vitalij</firstname>
+					<lastname>Baroos</lastname>
+				</first_coach>
+				<analising_coach>
+					<firstname>Garri</firstname>
+					<lastname>Kasparov</lastname> 
+				</analising_coach>
+				<young_coach>
+					<firstname>Mikolaj</firstname>
+					<lastname>Mikolajewicz</lastname>
+				</young_coach>
 			</staff>
 			<adress>
 				<street>Bohaterow Polski Street 3 </street>
@@ -79,21 +123,188 @@
 				<country>Lithuania</country>
 			</adress>
 		</team>
-		
-		<team id="KRK">
-			<name>Cracovia Chess</name>
-			<rank>2444</rank>
-			<titles>1</titles>
-			<staff>
-				<first_coach> Jakub Błaszczykowski </first_coach>
-				<analising_coach> Mariusz Białowski </analising_coach>
-				<young_coach> Krzysztof Kozak </young_coach>
-			</staff>
-			<adress>
-				<street>Władysława Street 3 </street>
-				<city>Cracow</city>
-				<country>Poland</country>
-			</adress>
-		</team>
+	</teams>
+	</players>
+		<player id="100">
+			<firstname>Garri</firstname>
+			<lastname>Kasparov</lastname>
+			<player_team refid="WLN"></player_team>
+			<elo>2792</elo>
+			<individual_rank>3</individual_rank>
+			<nationality code="RUS"> Russia </nationality>
+			<games>
+				<wins>301</wins>
+				<draw>120</draw>
+				<lost>111</lost>
+			</games>
+		</player>
+			<player id="101">
+			<firstname>Magnus</firstname>
+			<lastname>Carlsen</lastname>
+			<player_team refid="GDA"></player_team>
+			<elo>2899</elo>
+			<individual_rank>1</individual_rank>
+			<nationality code="NOR"> Norway </nationality>
+			<games>
+				<wins>122</wins>
+				<draw>33</draw>
+				<lost>11</lost>
+			</games>
+		</player>
+			<player id="102">
+			<firstname>Anatolyi</firstname>
+			<lastname>Karpov</lastname>
+			<player_team refid="WLN"></player_team>
+			<elo>2433</elo>
+			<individual_rank>8</individual_rank>
+			<nationality code="RUS"> Russia </nationality>
+			<games>
+				<wins>233</wins>
+				<draw>141</draw>
+				<lost>151</lost>
+			</games>
+		</player>
+			<player id="103">
+			<firstname>Shoei</firstname>
+			<lastname>Nakamura</lastname>
+			<player_team refid="GDA"></player_team>
+			<elo>2691</elo>
+			<individual_rank>5</individual_rank>
+			<nationality code="USA"> United States </nationality>
+			<games>
+				<wins>192</wins>
+				<draw>166</draw>
+				<lost>123</lost>
+			</games>
+		</player>
+			<player id="104">
+			<firstname>Blazej</firstname>
+			<lastname>Ho Duy</lastname>
+			<player_team refid="WWA"></player_team>
+			<elo>2733</elo>
+			<individual_rank>4</individual_rank>
+			<nationality code="POL"> Poland </nationality>
+			<games>
+				<wins>44</wins>
+				<draw>23</draw>
+				<lost>12</lost>
+			</games>
+		</player>
+			<player id="105">
+			<firstname>Jan</firstname>
+			<lastname>Duda</lastname>
+			<player_team refid="WWA"></player_team>
+			<elo>2811</elo>
+			<individual_rank>2</individual_rank>
+			<nationality code="POL"> Poland </nationality>
+			<games>
+				<wins>188</wins>
+				<draw>100</draw>
+				<lost>54</lost>
+			</games>
+		</player>
+			<player id="106">
+			<firstname>Mika</firstname>
+			<lastname>Coyoncovsky</lastname>
+			<player_team refid="LKS"></player_team>
+			<elo>2311</elo>
+			<individual_rank>11</individual_rank>
+			<nationality code="USA">United States</nationality>
+			<games>
+				<wins>100</wins>
+				<draw>120</draw>
+				<lost>67</lost>
+			</games>
+		</player>
+			<player id="107">
+			<firstname>Georg</firstname>
+			<lastname>Aschenbach</lastname>
+			<player_team refid="PZN"></player_team>
+			<elo>2344</elo>
+			<individual_rank>10</individual_rank>
+			<nationality code="GER"> Germany </nationality>
+			<games>
+				<wins>399</wins>
+				<draw>220</draw>
+				<lost>211</lost>
+			</games>
+		</player>
+			<player id="108">
+			<firstname>Vladimir</firstname>
+			<lastname>Kriv</lastname>
+			<player_team refid="PZN"></player_team>
+			<elo>2511</elo>
+			<individual_rank>6</individual_rank>
+			<nationality code="RUS"> Russia </nationality>
+			<games>
+				<wins>27</wins>
+				<draw>25</draw>
+				<lost>12</lost>
+			</games>
+		</player>
+			<player id="109">
+			<firstname>Akiba</firstname>
+			<lastname>Rubinstein</lastname>
+			<player_team refid="LKS"></player_team>
+			<elo>2510</elo>
+			<individual_rank>7</individual_rank>
+			<nationality code="ISR"> Israel </nationality>
+			<games>
+				<wins>222</wins>
+				<draw>231</draw>
+				<lost>144</lost>
+			</games>
+		</player>
+	</players>
+	<matches>
+		<match>
+			<date>10/05/2019</date>
+			<home_team refid=LKS>
+				<first_table_player refid="109"></first_table_player>
+				<second_table_player refid="106"></second_table_player>
+				<points>3.5</points>
+			</home_team>
+			<away_team refid=PZN>
+				<first_table_player refid="107"></first_table_player>
+				<second_table_player refid="108"></second_table_player>
+				<points>0.5</points>
+			</away_team>
+		</match>	
+		<match>
+				<date>10/05/2019</date>
+				<home_team refid=WWA>
+					<first_table_player refid="104"></first_table_player>
+					<second_table_player refid="105"></second_table_player>
+					<points>2</points>
+				</home_team>
+				<away_team refid=GDA>
+					<first_table_player refid="101"></first_table_player>
+					<second_table_player refid="103"></second_table_player>
+					<points>2</points>
+				</away_team>
+		</match>	
+		<match>
+			<date>10/05/2019</date>
+			<home_team refid=WLN>
+				<first_table_player refid="100"></first_table_player>
+				<second_table_player refid="102"></second_table_player>
+				<points>4</points>
+			</home_team>
+			<away_team refid=WWA>
+				<first_table_player refid="104"></first_table_player>
+				<second_table_player refid="105"></second_table_player>
+				<points>0</points>
+			</away_team>
+		</match>	
+	<matches>
+</chessLeague>
+			
+			
+			
+			
+			
+			
+			
+			
 		
 		

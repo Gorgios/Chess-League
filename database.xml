@@ -90,8 +90,9 @@
 				</analising_coach>
 				<young_coach>
 					<firstname>Filip</firstname>
-					<lastname>Tuszkowski/lastname>
+					<lastname>Tuszkowski</lastname>
 				</young_coach>
+			</staff>
 			<adress>
 				<street>Łazarska 39 </street>
 				<city>Poznan</city>
@@ -124,7 +125,7 @@
 			</adress>
 		</team>
 	</teams>
-	</players>
+	<players>
 		<player id="100">
 			<firstname>Garri</firstname>
 			<lastname>Kasparov</lastname>
@@ -259,12 +260,12 @@
 	<matches>
 		<match>
 			<date>10/05/2019</date>
-			<home_team refid=LKS>
+			<home_team refid="LKS">
 				<first_table_player refid="109"></first_table_player>
 				<second_table_player refid="106"></second_table_player>
 				<points>3.5</points>
 			</home_team>
-			<away_team refid=PZN>
+			<away_team refid="PZN">
 				<first_table_player refid="107"></first_table_player>
 				<second_table_player refid="108"></second_table_player>
 				<points>0.5</points>
@@ -272,12 +273,12 @@
 		</match>	
 		<match>
 				<date>10/05/2019</date>
-				<home_team refid=WWA>
+				<home_team refid="WWA">
 					<first_table_player refid="104"></first_table_player>
 					<second_table_player refid="105"></second_table_player>
 					<points>2</points>
 				</home_team>
-				<away_team refid=GDA>
+				<away_team refid="GDA">
 					<first_table_player refid="101"></first_table_player>
 					<second_table_player refid="103"></second_table_player>
 					<points>2</points>
@@ -285,18 +286,18 @@
 		</match>	
 		<match>
 			<date>10/05/2019</date>
-			<home_team refid=WLN>
+			<home_team refid="WLN">
 				<first_table_player refid="100"></first_table_player>
 				<second_table_player refid="102"></second_table_player>
 				<points>4</points>
 			</home_team>
-			<away_team refid=WWA>
+			<away_team refid="WWA">
 				<first_table_player refid="104"></first_table_player>
 				<second_table_player refid="105"></second_table_player>
 				<points>0</points>
 			</away_team>
 		</match>	
-	<matches>
+	</matches>
 </chessLeague>
 			
 			

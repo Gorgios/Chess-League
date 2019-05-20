@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chessLeague>
+	<teams>
+		<team id="GDA">
+			<name>PKS Gdansk</name>
+			<rank>2509</rank>
+			<titles>3</titles>
+			<staff>
+				<first_coach> Jan Boklev </first_coach>
+				<analising_coach> Marian Pazdzioch </analising_coach>
+				<young_coach> Mariusz Rusznikiewicz </young_coach>
+			</staff>
+			<adress>
+				<street>Wolska 3 </street>
+				<city>Gdansk</city>
+				<country>Poland</country>
+			</adress>
+		</team>
+		<team id="WWA">
+			<name>WKSZACH Warszawa</name>
+			<rank>2619</rank>
+			<titles>10</titles>
+			<staff>
+				<first_coach> Garrii Marinkov </first_coach>
+				<analising_coach> Stock Ryba </analising_coach>
+				<young_coach> Blazej Wiecławski </young_coach>
+			</staff>
+			<adress>
+				<street>Aleja Zasłużonych 33 </street>
+				<city>Warsaw</city>
+				<country>Poland</country>
+			</adress>
+		</team>
+		
+		<team id="LKSZ">
+			<name>Łódzki Klub Szachowy Pomarancza</name>
+			<rank>2311</rank>
+			<titles>0</titles>
+			<staff>
+				<first_coach> Jerzy Owsiak </first_coach>
+				<analising_coach> James Fischer </analising_coach>
+				<young_coach> Bartosz Mierzejewski </young_coach>
+			</staff>
+			<adress>
+				<street>Powstańców 33 </street>
+				<city>Lodz</city>
+				<country>Poland</country>
+			</adress>
+		</team>
+		
+		<team id="PZN">
+			<name>Poznanski Klub Szachowo-Brydżowy</name>
+			<rank>2699</rank>
+			<titles>5</titles>
+			<staff>
+				<first_coach> Maciej Domin </first_coach>
+				<analising_coach> Krzysztof Krawczyk </analising_coach>
+				<young_coach> Marcin Kostulak </young_coach>
+			</staff>
+			<adress>
+				<street>Łazarska 39 </street>
+				<city>Poznan</city>
+				<country>Poland</country>
+			</adress>
+		</team>
+		
+		<team id="WLN">
+			<name>Polskie Wilno - Klub Szachowy</name>
+			<rank>2592</rank>
+			<titles>7</titles>
+			<staff>
+				<first_coach> Roman Kasparov</first_coach>
+				<analising_coach> Dariusz Makeev </analising_coach>
+				<young_coach> Vitalij Zdorevitzki </young_coach>
+			</staff>
+			<adress>
+				<street>Bohaterow Polski Street 3 </street>
+				<city>Wilno</city>
+				<country>Lithuania</country>
+			</adress>
+		</team>
+		
+		<team id="KRK">
+			<name>Cracovia Chess</name>
+			<rank>2444</rank>
+			<titles>1</titles>
+			<staff>
+				<first_coach> Jakub Błaszczykowski </first_coach>
+				<analising_coach> Mariusz Białowski </analising_coach>
+				<young_coach> Krzysztof Kozak </young_coach>
+			</staff>
+			<adress>
+				<street>Władysława Street 3 </street>
+				<city>Cracow</city>
+				<country>Poland</country>
+			</adress>
+		</team>
+		
+		

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles.css"?>
 <chessLeague>
 	<teams>
 		<team id="GDA">
 			<name>PKS Gdansk</name>
 			<rank>2</rank>
-			<titles>3</titles>
 			<staff>
 				<first_coach> 
 					<firstname>Jan </firstname>
@@ -28,7 +28,6 @@
 		<team id="WWA">
 			<name>WKSZACH Warszawa</name>
 			<rank>5</rank>
-			<titles>10</titles>
 			<staff>
 				<first_coach> 
 					<firstname>Mirosław </firstname>
@@ -53,7 +52,6 @@
 		<team id="LKS">
 			<name>Łódzki Klub Szachowy Pomarancza</name>
 			<rank>11</rank>
-			<titles>0</titles>
 			<staff>
 				<first_coach> 
 					<firstname>Jan</firstname>
@@ -78,7 +76,6 @@
 		<team id="PZN">
 			<name>Poznanski Klub Szachowo-Brydżowy</name>
 			<rank>1</rank>
-			<titles>5</titles>
 			<staff>
 				<first_coach> 
 					<firstname>Mikołaj</firstname>
@@ -102,7 +99,6 @@
 		
 		<team id="WLN">
 			<name>Polskie Wilno - Klub Szachowy</name>
-			<rank>3</rank>
 			<titles>7</titles>
 			<staff>
 				<first_coach> 

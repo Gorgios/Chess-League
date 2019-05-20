@@ -1,0 +1,100 @@
+chessLeague{
+    border: 3px solid grey;
+    margin: auto;
+    width: 720px;
+    height: 400px;
+
+    font-weight: bold;
+    background-color: #876624;
+}
+chessLeague:before{
+	margin: 5px 5px 5px 5px;
+    font-weight: bold;
+    color: plum;
+    content: "Chess League: ";
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+teams,players, matches{
+    float:left;
+    background: #859dc4;
+    margin: 10px 10px 10px 10px;
+}
+teams:before{
+	 display: table;
+    content: "Teams: ";
+    font-weight: bold;
+    font-size: 200%;
+    color: #8e5164;
+    margin: 5px 10px 5px 5px;
+}
+teams team name{
+	margin: 5px 10px 5px 5px;
+	display: block;
+    font-weight: bold;
+    font-size: 150%;
+    color: blue;
+}
+
+players:before{
+	 display: table;
+    content: "Players: ";
+    font-weight: bold;
+    font-size: 200%;
+    color: #8e5164;
+    margin: 5px 10px 5px 5px;
+}
+matches:before{
+	 display: table;
+    content: "Matches: ";
+    font-weight: bold;
+    font-size: 200%;
+    color: #8e5164;
+    margin: 5px 10px 5px 5px;
+}
+/*teams name:before{
+	display: block;
+    content: "Name of team: ";
+    font-weight: bold;
+    font-size: 120%;
+    color: #BECA11;
+}*/
+teams rank:before{
+	display: block;
+    content: "Current Rank: ";
+    font-weight: bold;
+    font-size: 120%;
+    color: #BECA11;
+}
+
+staff first_coach:before{
+	display: block;
+    content: "First Coach: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+staff analising_coach:before{
+	display: block;
+    content: "Analising Coach: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}staff young_coach:before{
+	display: block;
+    content: "Young coach: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+teams adress:before{
+	display: block;
+    content: "Adress: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+

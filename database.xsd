@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<!-- SIMPLE TYPES -->
+<xs:simpleType name="stringtype">
+  <xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+<xs:simpleType name="inttype">
+  <xs:restriction base="xs:positiveInteger"/>
+</xs:simpleType>
+
+<xs:simpleType name="dectype">
+  <xs:restriction base="xs:decimal"/>
+</xs:simpleType>
+ <xs:simpleType name="datetype">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{2}/[0-9]{2}/[0-9]{4}"></xs:pattern>
+    </xs:restriction>
+</xs:simpleType>
+<!-- ATTRIBUTES -->
+
+    <xs:attribute name="id">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{3}"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="player_id">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{3}"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+        <xs:attribute name="refid">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="([A-Z]{3})"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="code">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{3}"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+
+    </xs:attribute>
+<!-- DIFFRENT-->
+<xs:complexType name="refidType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="refid"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+</xs:complexType>
+ <xs:complexType name="countryType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="code"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+</xs:complexType>
+<!-- TEAM -->
+<xs:complexType name = "addressType">
+     <xs:sequence>
+    <xs:element name="street" type="stringtype"/>
+    <xs:element name="city" type="stringtype"/>
+    <xs:element name="country" type="stringtype"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name = "coachType">
+    <xs:sequence>
+        <xs:element name = "firstname" type="stringtype"/>
+        <xs:element name = "lastname" type="stringtype"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name = "staffType">
+ <xs:sequence>
+        <xs:element name = "first_coach" type="coachType"/>
+        <xs:element name = "analising_coach" type="coachType"/>
+        <xs:element name = "young_coach" type="coachType"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name = "teamType">
+ <xs:sequence>
+        <xs:element name = "name" type="stringtype"/>
+        <xs:element name = "rank" type="inttype"/>
+        <xs:element name = "staff" type="staffType"/>
+        <xs:element name = "address" type="addressType"/>
+    </xs:sequence>
+    <xs:attribute ref="id"></xs:attribute>
+</xs:complexType> 
+<!-- PLAYER -->
+<xs:complexType name = "gamesType">
+    <xs:sequence>
+        <xs:element name = "wins" type="inttype"/>
+        <xs:element name = "draw" type="inttype"/>
+        <xs:element name = "lost" type="inttype"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name = "playerType">
+ <xs:sequence>
+        <xs:element name = "firstname" type="stringtype"/>
+        <xs:element name = "lastname" type="stringtype"/>
+        <xs:element name = "player_team" type="refidType"/>
+        <xs:element name = "elo" type="inttype"/>
+        <xs:element name = "individual_rank" type="inttype"/>
+        <xs:element name = "nationality" type="countryType"/>
+        <xs:element name = "games" type="gamesType"/>
+    </xs:sequence>
+    <xs:attribute ref="player_id"></xs:attribute>
+</xs:complexType> 
+<!-- MATCHES -->
+<xs:complexType name = "matchTeamType">
+    <xs:sequence>
+        <xs:element name = "teamname" type="refidType"/>
+        <xs:element name = "first_table_player" type="refidType"/>
+        <xs:element name = "second_table_player" type="refidType"/>
+        <xs:element name = "points" type="dectype"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name = "matchType">
+ <xs:sequence>
+        <xs:element name = "date" type="datetype"/>
+        <xs:element name = "home_team" type="matchTeamType"/>
+        <xs:element name = "away_team" type="matchTeamType"/>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- ALL -->
+<xs:complexType name = "teamsType">
+    <xs:sequence>
+        <xs:element name="team" type="teamType" minOccurs="4" maxOccurs="12"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name = "playersType">
+    <xs:sequence>
+        <xs:element name="player" type="playerType" minOccurs="8" maxOccurs="24"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name = "matchesType">
+    <xs:sequence>
+        <xs:element name="match" type="matchType" minOccurs="1" maxOccurs="120"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name = "chessLeagueType">
+    <xs:sequence>
+        <xs:element name="teams" type="teamsType" />
+        <xs:element name="players" type="playersType" />
+        <xs:element name="matches" type="matchesType" />
+    </xs:sequence>
+</xs:complexType>
+<xs:element name="chessLeague" type="chessLeagueType"/>
+</xs:schema>

@@ -161,5 +161,30 @@
         <xs:element name="matches" type="matchesType" />
     </xs:sequence>
 </xs:complexType>
-<xs:element name="chessLeague" type="chessLeagueType"/>
+<xs:element name="chessLeague" type="chessLeagueType">
+<xs:key name="player_key">
+            <xs:selector xpath=".//players/player"></xs:selector>
+            <xs:field xpath="@player_id"></xs:field>
+</xs:key>
+<xs:keyref name="player_id_ref" refer="player_key">
+            <xs:selector xpath=".//matches/match/home_team/first_table_player"></xs:selector>
+            <xs:field xpath="@refid"></xs:field>
+</xs:keyref>
+<xs:keyref name="player_id_ref2" refer="player_key">
+            <xs:selector xpath=".//matches/match/home_team/second_table_player"></xs:selector>
+            <xs:field xpath="@refid"></xs:field>
+</xs:keyref>
+<xs:key name="team_key">
+            <xs:selector xpath=".//teams/team"></xs:selector>
+            <xs:field xpath="@id"></xs:field>
+</xs:key>
+<xs:keyref name="team_id_ref" refer="team_key">
+            <xs:selector xpath=".//players/player/player_team"></xs:selector>
+            <xs:field xpath="@refid"></xs:field>
+</xs:keyref>
+<xs:keyref name="tean_id_ref2" refer="team_key">
+           <xs:selector xpath=".//matches/match/home_team/teamname"></xs:selector>
+            <xs:field xpath="@refid"></xs:field>
+</xs:keyref>
+</xs:element>
 </xs:schema>

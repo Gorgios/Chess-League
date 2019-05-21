@@ -1,0 +1,27 @@
+<!ENTITY % address "street,city,country">
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT team (name,rank,staff,address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rank (#PCDATA)>
+<!ELEMENT staff (first_coach,analising_coach,young_coach)>
+<!ELEMENT first_coach (firstname,lastname)>
+<!ELEMENT analising_coach (firstname,lastname)>
+<!ELEMENT young_coach (firstname,lastname)>
+<!ELEMENT players (player+)>
+<!ELEMENT teams (team+)>
+<!ELEMENT matches (match+)>
+<!ELEMENT player (firstname,lastname,player_team,elo,individual_rank,nationality,games)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT player_team (#PCDATA)>
+<!ELEMENT elo (#PCDATA)>
+<!ELEMENT individual_rank (#PCDATA)>
+<!ELEMENT nationality (#PCDATA)>
+<!ELEMENT games (wins,draw,lost)>
+<!ELEMENT wins (#PCDATA)>
+<!ELEMENT draw (#PCDATA)>
+<!ELEMENT lost (#PCDATA)>
+<!ATTLIST player player_id ID #REQUIRED>
+<!ATTLIST nationality code ID #REQUIRED>

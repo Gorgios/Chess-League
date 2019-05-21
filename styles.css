@@ -1,8 +1,8 @@
 chessLeague{
     border: 3px solid grey;
     margin: auto;
-    width: 720px;
-    height: 400px;
+    width: 1280px;
+    height: 720px;
 
     font-weight: bold;
     background-color: #876624;
@@ -22,6 +22,7 @@ teams,players, matches{
     float:left;
     background: #859dc4;
     margin: 10px 10px 10px 10px;
+	width: 400px;
 }
 teams:before{
 	 display: table;
@@ -90,9 +91,104 @@ staff analising_coach:before{
     font-size: 110%;
     color: #BECA11;
 }
-teams adress:before{
+teams address:before{
 	display: block;
     content: "Adress: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+players firstname  {
+margin: 5px 10px 5px 5px;
+    font-weight: bold;
+    font-size: 150%;
+    color: blue;
+}
+players lastname {
+	margin: 5px 10px 5px 5px;
+    font-weight: bold;
+    font-size: 150%;
+    color: blue;
+}
+players
+players elo{
+	display: block;
+}
+players elo:before{
+    content: "Elo Rating : ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+players individual_rank{
+	display: block;
+}
+players individual_rank:before{
+    content: "Individual rank: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+players nationality:before{
+	 content: "Nationality: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+players country{
+	display:block;
+}
+players games{
+	display:block;
+}
+games wins:before{
+	 content: "Wins: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+games draw:before{
+	 content: "Draw: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+games lost:before{
+	 content: "Lost: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+players player_team:before{
+	display: block;
+    content: "Team : ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+matches date{
+	display: block;
+}
+matches date:before{
+	 content: "Date of match: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+matches home_team{
+	display: block;
+}
+matches home_team:before{
+	 content: "Home team points: ";
+    font-weight: bold;
+    font-size: 110%;
+    color: #BECA11;
+}
+matches away_team: {
+	display: block;
+}
+matches away_team:before{
+	 content: "Away team points: ";
     font-weight: bold;
     font-size: 110%;
     color: #BECA11;

@@ -100,7 +100,7 @@
 		
 		<team id="WLN">
 			<name>Polskie Wilno - Klub Szachowy</name>
-			<titles>7</titles>
+			<rank>7</rank>
 			<staff>
 				<first_coach> 
 					<firstname>Vitalij</firstname>
@@ -123,7 +123,7 @@
 		</team>
 	</teams>
 	<players>
-		<player player_id="100">
+		<player player_id="GKS">
 			<firstname>Garri</firstname>
 			<lastname>Kasparov</lastname>
 			<player_team refid="WLN"></player_team>
@@ -136,7 +136,7 @@
 				<lost>111</lost>
 			</games>
 		</player>
-			<player player_id="101">
+			<player player_id="MCA">
 			<firstname>Magnus</firstname>
 			<lastname>Carlsen</lastname>
 			<player_team refid="GDA"></player_team>
@@ -149,7 +149,7 @@
 				<lost>11</lost>
 			</games>
 		</player>
-			<player player_id="102">
+			<player player_id="AKA">
 			<firstname>Anatolyi</firstname>
 			<lastname>Karpov</lastname>
 			<player_team refid="WLN"></player_team>
@@ -162,7 +162,7 @@
 				<lost>151</lost>
 			</games>
 		</player>
-			<player player_id="103">
+			<player player_id="SNA">
 			<firstname>Shoei</firstname>
 			<lastname>Nakamura</lastname>
 			<player_team refid="GDA"></player_team>
@@ -175,7 +175,7 @@
 				<lost>123</lost>
 			</games>
 		</player>
-			<player player_id="104">
+			<player player_id="BHD">
 			<firstname>Blazej</firstname>
 			<lastname>Ho Duy</lastname>
 			<player_team refid="WWA"></player_team>
@@ -188,7 +188,7 @@
 				<lost>12</lost>
 			</games>
 		</player>
-			<player player_id="105">
+			<player player_id="JDU">
 			<firstname>Jan</firstname>
 			<lastname>Duda</lastname>
 			<player_team refid="WWA"></player_team>
@@ -201,7 +201,7 @@
 				<lost>54</lost>
 			</games>
 		</player>
-			<player player_id="106">
+			<player player_id="MCO">
 			<firstname>Mika</firstname>
 			<lastname>Coyoncovsky</lastname>
 			<player_team refid="LKS"></player_team>
@@ -214,7 +214,7 @@
 				<lost>67</lost>
 			</games>
 		</player>
-			<player player_id="107">
+			<player player_id="GAS">
 			<firstname>Georg</firstname>
 			<lastname>Aschenbach</lastname>
 			<player_team refid="PZN"></player_team>
@@ -227,7 +227,7 @@
 				<lost>211</lost>
 			</games>
 		</player>
-			<player player_id="108">
+			<player player_id="VKR">
 			<firstname>Vladimir</firstname>
 			<lastname>Kriv</lastname>
 			<player_team refid="PZN"></player_team>
@@ -240,7 +240,7 @@
 				<lost>12</lost>
 			</games>
 		</player>
-			<player player_id="109">
+			<player player_id="ARU">
 			<firstname>Akiba</firstname>
 			<lastname>Rubinstein</lastname>
 			<player_team refid="LKS"></player_team>
@@ -258,39 +258,39 @@
 		<match>
 			<date>10/05/2019</date>
 			<home_team refid="LKS">
-				<first_table_player refid="109"></first_table_player>
-				<second_table_player refid="106"></second_table_player>
+				<first_table_player refid="ARU"></first_table_player>
+				<second_table_player refid="MCO"></second_table_player>
 				<points>3.5</points>
 			</home_team>
 			<away_team refid="PZN">
-				<first_table_player refid="107"></first_table_player>
-				<second_table_player refid="108"></second_table_player>
+				<first_table_player refid="GAS"></first_table_player>
+				<second_table_player refid="VKR"></second_table_player>
 				<points>0.5</points>
 			</away_team>
 		</match>	
 		<match>
 				<date>10/05/2019</date>
 				<home_team refid="WWA">
-					<first_table_player refid="104"></first_table_player>
-					<second_table_player refid="105"></second_table_player>
+					<first_table_player refid="BHD"></first_table_player>
+					<second_table_player refid="JDU"></second_table_player>
 					<points>2</points>
 				</home_team>
 				<away_team refid="GDA">
-					<first_table_player refid="101"></first_table_player>
-					<second_table_player refid="103"></second_table_player>
+					<first_table_player refid="MCA"></first_table_player>
+					<second_table_player refid="SNA"></second_table_player>
 					<points>2</points>
 				</away_team>
 		</match>	
 		<match>
 			<date>10/05/2019</date>
 			<home_team refid="WLN">
-				<first_table_player refid="100"></first_table_player>
-				<second_table_player refid="102"></second_table_player>
+				<first_table_player refid="GKS"></first_table_player>
+				<second_table_player refid="AKA"></second_table_player>
 				<points>4</points>
 			</home_team>
 			<away_team refid="WWA">
-				<first_table_player refid="104"></first_table_player>
-				<second_table_player refid="105"></second_table_player>
+				<first_table_player refid="BHD"></first_table_player>
+				<second_table_player refid="JDU"></second_table_player>
 				<points>0</points>
 			</away_team>
 		</match>	

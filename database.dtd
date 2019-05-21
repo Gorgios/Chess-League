@@ -1,3 +1,10 @@
+<!ATTLIST team id ID #REQUIRED>
+<!ATTLIST player player_id ID #REQUIRED>
+<!ATTLIST nationality code CDATA #REQUIRED>
+<!ATTLIST player_team refid IDREF #REQUIRED>
+<!ATTLIST first_table_player refid IDREF #REQUIRED>
+<!ATTLIST second_table_player refid IDREF #REQUIRED>
+<!ATTLIST teamname refid IDREF #REQUIRED>
 <!ELEMENT chessLeague (teams,players,matches)>
 <!ELEMENT address (street,city,country)>
 <!ELEMENT street (#PCDATA)>
@@ -26,16 +33,9 @@
 <!ELEMENT matches (match+)>
 <!ELEMENT match (date,home_team,away_team)>
 <!ELEMENT date (#PCDATA)>
-<!ELEMENT home_team (first_table_player, second_table_player, points)>
+<!ELEMENT home_team (teamname,first_table_player, second_table_player, points)>
 <!ELEMENT first_table_player (#PCDATA)>
 <!ELEMENT second_table_player (#PCDATA)>
 <!ELEMENT points (#PCDATA)>
-<!ELEMENT away_team (first_table_player, second_table_player, points)>
-<!ATTLIST team id ID #REQUIRED>
-<!ATTLIST player player_id ID #REQUIRED>
-<!ATTLIST nationality code CDATA #REQUIRED>
-<!ATTLIST player_team refid IDREF #REQUIRED>
-<!ATTLIST home_team refid IDREF #REQUIRED>
-<!ATTLIST away_team refid IDREF #REQUIRED>
-<!ATTLIST first_table_player refid IDREF #REQUIRED>
-<!ATTLIST second_table_player refid IDREF #REQUIRED>
+<!ELEMENT away_team (teamname,first_table_player, second_table_player, points)>
+<!ELEMENT teamname (#PCDATA)>

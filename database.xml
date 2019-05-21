@@ -257,12 +257,14 @@
 	<matches>
 		<match>
 			<date>10/05/2019</date>
-			<home_team refid="LKS">
+			<home_team>
+				<teamname refid="LKS"></teamname>
 				<first_table_player refid="ARU"></first_table_player>
 				<second_table_player refid="MCO"></second_table_player>
 				<points>3.5</points>
 			</home_team>
-			<away_team refid="PZN">
+			<away_team >
+				<teamname refid="PZN"></teamname>
 				<first_table_player refid="GAS"></first_table_player>
 				<second_table_player refid="VKR"></second_table_player>
 				<points>0.5</points>
@@ -270,12 +272,14 @@
 		</match>	
 		<match>
 				<date>10/05/2019</date>
-				<home_team refid="WWA">
+				<home_team >
+					<teamname refid="WWA"></teamname>
 					<first_table_player refid="BHD"></first_table_player>
 					<second_table_player refid="JDU"></second_table_player>
 					<points>2</points>
 				</home_team>
-				<away_team refid="GDA">
+				<away_team >
+					<teamname refid="GDA"></teamname>
 					<first_table_player refid="MCA"></first_table_player>
 					<second_table_player refid="SNA"></second_table_player>
 					<points>2</points>
@@ -283,12 +287,14 @@
 		</match>	
 		<match>
 			<date>10/05/2019</date>
-			<home_team refid="WLN">
+			<home_team >
+				<teamname refid="WLN"></teamname>
 				<first_table_player refid="GKS"></first_table_player>
 				<second_table_player refid="AKA"></second_table_player>
 				<points>4</points>
 			</home_team>
-			<away_team refid="WWA">
+			<away_team >
+				<teamname refid="WWA"></teamname>
 				<first_table_player refid="BHD"></first_table_player>
 				<second_table_player refid="JDU"></second_table_player>
 				<points>0</points>

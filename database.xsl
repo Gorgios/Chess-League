@@ -16,16 +16,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     text-align: center;
                 }
                 h2 {
-                color: rgb(31, 70, 135);
+                color: #e20047;
                 font-weight: bold;
                 text-align: center;
+                }
+                body {
+                background-color: #656d7a;
                 }
 
 </style>
 </head>
   <body>
   <h2>Teams</h2>
-  <table class="table table-hover table-striped" >
+  <table class="table table-hover table-dark" >
     <tr>
       <th>ID</th>
       <th>Name</th>
@@ -77,7 +80,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </xsl:for-each>
   </table >
   <h2>Players</h2>
-  <table class="table table-hover table-striped" >
+ <table class="table table-hover table-dark" >
     <tr >
       <th>ID</th>
       <th>Firstname</th>
@@ -107,7 +110,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </xsl:for-each>
   </table>
   <h2>Marches</h2>
-  <table class="table table-hover table-striped" >
+ <table class="table table-hover table-dark" >
     <tr >
       <th>Home Team</th>
       <th>First Table Player</th>

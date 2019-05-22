@@ -1,7 +1,28 @@
-<html><body>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+                table {
+                    border: 2px solid black;
+                    border-collapse: collapse;
+                }
+                td, th, tr {
+                    border: 1px solid black;
+                    text-align: center;
+                }
+                h2 {
+                color: rgb(31, 70, 135);
+                font-weight: bold;
+                text-align: center;
+                }
+
+</style>
+</head>
+<body>
 <h2>Teams</h2>
-<table border="1">
-<tr bgcolor="#9acd32">
+<table class="table table-hover table-striped">
+<tr>
 <th>ID</th>
 <th>Name</th>
 <th>Rank</th>
@@ -11,35 +32,8 @@
 <th>Adress</th>
 </tr>
 <tr>
-<td>GDA</td>
-<td>PKS Gdansk</td>
-<td>2</td>
-<td>Jan   Boklev </td>
-<td>Marian  Pazdzioch </td>
-<td>Marcin Rusznikiewicz</td>
-<td>Wolska 3  Gdansk Poland</td>
-</tr>
-<tr>
-<td>WWA</td>
-<td>WKSZACH Warszawa</td>
-<td>5</td>
-<td>Mirosław   Bojański </td>
-<td>Zbigniew  Kowalski </td>
-<td>Zygmunt Małek</td>
-<td>Aleja Zasłużonych 33  Warsaw Poland</td>
-</tr>
-<tr>
-<td>LKS</td>
-<td>Łódzki Klub Szachowy Pomarancza</td>
-<td>11</td>
-<td>Jan Kowalski</td>
-<td>Piotr Reiss</td>
-<td>Bartosz Literski</td>
-<td>Powstańców 33  Lodz Poland</td>
-</tr>
-<tr>
-<td>PZN</td>
-<td>Poznanski Klub Szachowo-Brydżowy</td>
+<td style="color: #4979c1;">PZN</td>
+<td style="color: #4979c1;">Poznanski Klub Szachowo-Brydżowy</td>
 <td>1</td>
 <td>Mikołaj  Drożdżyński</td>
 <td>Sebastian Olszewski</td>
@@ -47,18 +41,45 @@
 <td>Łazarska 39  Poznan Poland</td>
 </tr>
 <tr>
-<td>WLN</td>
-<td>Polskie Wilno - Klub Szachowy</td>
+<td style="color: #12753b;">GDA</td>
+<td style="color: #12753b;">PKS Gdansk</td>
+<td>2</td>
+<td>Jan   Boklev </td>
+<td>Marian  Pazdzioch </td>
+<td>Marcin Rusznikiewicz</td>
+<td>Wolska 3  Gdansk Poland</td>
+</tr>
+<tr>
+<td style="color: #516077;">WWA</td>
+<td style="color: #516077;">WKSZACH Warszawa</td>
+<td>5</td>
+<td>Mirosław   Bojański </td>
+<td>Zbigniew  Kowalski </td>
+<td>Zygmunt Małek</td>
+<td>Aleja Zasłużonych 33  Warsaw Poland</td>
+</tr>
+<tr>
+<td style="color: #66b7b4;">WLN</td>
+<td style="color: #66b7b4;">Polskie Wilno - Klub Szachowy</td>
 <td>7</td>
 <td>Vitalij Baroos</td>
 <td>Garri Kasparov</td>
 <td>Mikolaj Mikolajewicz</td>
 <td>Bohaterow Polski Street 3  Wilno Lithuania</td>
 </tr>
+<tr>
+<td style="color: #d64646;">LKS</td>
+<td style="color: #d64646;">Łódzki Klub Szachowy Pomarancza</td>
+<td>11</td>
+<td>Jan Kowalski</td>
+<td>Piotr Reiss</td>
+<td>Bartosz Literski</td>
+<td>Powstańców 33  Lodz Poland</td>
+</tr>
 </table>
 <h2>Players</h2>
-<table border="1">
-<tr bgcolor="#9acd32">
+<table class="table table-hover table-striped">
+<tr>
 <th>ID</th>
 <th>Firstname</th>
 <th>Lastname</th>
@@ -69,18 +90,6 @@
 <th>Wins</th>
 <th>Draws</th>
 <th>Lost</th>
-</tr>
-<tr>
-<td>GKS</td>
-<td>Garri</td>
-<td>Kasparov</td>
-<td>WLN</td>
-<td>2792</td>
-<td>3</td>
-<td>RUS</td>
-<td>301</td>
-<td>120</td>
-<td>111</td>
 </tr>
 <tr>
 <td>MCA</td>
@@ -95,28 +104,28 @@
 <td>11</td>
 </tr>
 <tr>
-<td>AKA</td>
-<td>Anatolyi</td>
-<td>Karpov</td>
-<td>WLN</td>
-<td>2433</td>
-<td>8</td>
-<td>RUS</td>
-<td>233</td>
-<td>141</td>
-<td>151</td>
+<td>JDU</td>
+<td>Jan</td>
+<td>Duda</td>
+<td>WWA</td>
+<td>2811</td>
+<td>2</td>
+<td>POL</td>
+<td>188</td>
+<td>100</td>
+<td>54</td>
 </tr>
 <tr>
-<td>SNA</td>
-<td>Shoei</td>
-<td>Nakamura</td>
-<td>GDA</td>
-<td>2691</td>
-<td>5</td>
-<td>USA</td>
-<td>192</td>
-<td>166</td>
-<td>123</td>
+<td>GKS</td>
+<td>Garri</td>
+<td>Kasparov</td>
+<td>WLN</td>
+<td>2792</td>
+<td>3</td>
+<td>RUS</td>
+<td>301</td>
+<td>120</td>
+<td>111</td>
 </tr>
 <tr>
 <td>BHD</td>
@@ -131,40 +140,16 @@
 <td>12</td>
 </tr>
 <tr>
-<td>JDU</td>
-<td>Jan</td>
-<td>Duda</td>
-<td>WWA</td>
-<td>2811</td>
-<td>2</td>
-<td>POL</td>
-<td>188</td>
-<td>100</td>
-<td>54</td>
-</tr>
-<tr>
-<td>MCO</td>
-<td>Mika</td>
-<td>Coyoncovsky</td>
-<td>LKS</td>
-<td>2311</td>
-<td>11</td>
+<td>SNA</td>
+<td>Shoei</td>
+<td>Nakamura</td>
+<td>GDA</td>
+<td>2691</td>
+<td>5</td>
 <td>USA</td>
-<td>100</td>
-<td>120</td>
-<td>67</td>
-</tr>
-<tr>
-<td>GAS</td>
-<td>Georg</td>
-<td>Aschenbach</td>
-<td>PZN</td>
-<td>2344</td>
-<td>10</td>
-<td>GER</td>
-<td>399</td>
-<td>220</td>
-<td>211</td>
+<td>192</td>
+<td>166</td>
+<td>123</td>
 </tr>
 <tr>
 <td>VKR</td>
@@ -190,10 +175,46 @@
 <td>231</td>
 <td>144</td>
 </tr>
+<tr>
+<td>AKA</td>
+<td>Anatolyi</td>
+<td>Karpov</td>
+<td>WLN</td>
+<td>2433</td>
+<td>8</td>
+<td>RUS</td>
+<td>233</td>
+<td>141</td>
+<td>151</td>
+</tr>
+<tr>
+<td>GAS</td>
+<td>Georg</td>
+<td>Aschenbach</td>
+<td>PZN</td>
+<td>2344</td>
+<td>10</td>
+<td>GER</td>
+<td>399</td>
+<td>220</td>
+<td>211</td>
+</tr>
+<tr>
+<td>MCO</td>
+<td>Mika</td>
+<td>Coyoncovsky</td>
+<td>LKS</td>
+<td>2311</td>
+<td>11</td>
+<td>USA</td>
+<td>100</td>
+<td>120</td>
+<td>67</td>
+</tr>
 </table>
 <h2>Marches</h2>
-<table border="1">
-<tr bgcolor="#9acd32">
+<table class="table table-hover table-striped">
+<tr>
 <th>Home Team</th>
 <th>First Table Player</th>
 <th>Second Table Player</th>
@@ -238,4 +259,5 @@
 <td>WWA</td>
 </tr>
 </table>
-</body></html>
+</body>
+</html>

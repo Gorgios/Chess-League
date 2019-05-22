@@ -4,10 +4,29 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
   <html>
+   <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+            <style>
+                table {
+                    border: 2px solid black;
+                    border-collapse: collapse;
+                }
+                td, th, tr {
+                    border: 1px solid black;
+                    text-align: center;
+                }
+                h2 {
+                color: rgb(31, 70, 135);
+                font-weight: bold;
+                text-align: center;
+                }
+
+</style>
+</head>
   <body>
   <h2>Teams</h2>
-  <table border="1">
-    <tr bgcolor="#9acd32">
+  <table class="table table-hover table-striped" >
+    <tr>
       <th>ID</th>
       <th>Name</th>
       <th>Rank</th>
@@ -17,9 +36,28 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
        <th>Adress</th>
     </tr>
     <xsl:for-each select="chessLeague/teams/team">
+    <xsl:sort select="rank" data-type="number" />
     <tr>
-      <td><xsl:value-of select="@id"/></td>
-      <td><xsl:value-of select="name"/></td>
+      <xsl:if test="@id='WWA'">  
+      <td style="color: #516077;"><xsl:value-of select="@id"/></td>
+      <td style="color: #516077;"><xsl:value-of select="name"/></td>
+      </xsl:if>
+        <xsl:if test="@id='PZN'">  
+      <td style="color: #4979c1;"><xsl:value-of select="@id"/></td>
+      <td style="color: #4979c1;"><xsl:value-of select="name"/></td>
+      </xsl:if>
+        <xsl:if test="@id='LKS'">  
+      <td style="color: #d64646;"><xsl:value-of select="@id"/></td>
+      <td style="color: #d64646;"><xsl:value-of select="name"/></td>
+      </xsl:if>
+        <xsl:if test="@id='GDA'">  
+      <td style="color: #12753b;"><xsl:value-of select="@id"/></td>
+      <td style="color: #12753b;"><xsl:value-of select="name"/></td>
+      </xsl:if>
+        <xsl:if test="@id='WLN'">  
+      <td style="color: #66b7b4;"><xsl:value-of select="@id"/></td>
+      <td style="color: #66b7b4;"><xsl:value-of select="name"/></td>
+      </xsl:if>
       <td><xsl:value-of select="rank"/></td>
       <td><xsl:value-of select="staff/first_coach/firstname"/> 
     <xsl:text> </xsl:text>
@@ -37,10 +75,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <xsl:value-of select="address/country"/></td>
     </tr>
     </xsl:for-each>
-  </table>
+  </table >
   <h2>Players</h2>
-  <table border="1">
-    <tr bgcolor="#9acd32">
+  <table class="table table-hover table-striped" >
+    <tr >
       <th>ID</th>
       <th>Firstname</th>
       <th>Lastname</th>
@@ -53,6 +91,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
        <th>Lost</th>
     </tr>
     <xsl:for-each select="chessLeague/players/player">
+    <xsl:sort select="individual_rank" data-type="number" />
     <tr>
       <td><xsl:value-of select="@player_id"/></td>
       <td><xsl:value-of select="firstname"/></td>
@@ -68,8 +107,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </xsl:for-each>
   </table>
   <h2>Marches</h2>
-  <table border="1">
-    <tr bgcolor="#9acd32">
+  <table class="table table-hover table-striped" >
+    <tr >
       <th>Home Team</th>
       <th>First Table Player</th>
       <th>Second Table Player</th>

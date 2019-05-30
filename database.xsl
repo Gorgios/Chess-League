@@ -61,6 +61,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <td style="color: #66b7b4;"><xsl:value-of select="@id"/></td>
       <td style="color: #66b7b4;"><xsl:value-of select="name"/></td>
       </xsl:if>
+      <xsl:if test="@id='WLN'">  
       <td><xsl:value-of select="rank"/></td>
       <td><xsl:value-of select="staff/first_coach/firstname"/> 
     <xsl:text> </xsl:text>
